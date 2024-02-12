@@ -1,0 +1,75 @@
+.body{ 
+    background: #f3f3f3; 
+    background-size: cover; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-family: sans-serif; 
+} 
+ 
+.form{ 
+    width: 280px; 
+    height: 100%;
+} 
+ 
+.container{ 
+    display: grid; 
+    place-items: center; 
+} 
+ 
+.icono{ 
+    width: 80px; 
+    height: 80px; 
+} 
+
+.logo{ 
+    width: 260px; 
+    height: 80px; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+} 
+ 
+.cuadro{ 
+    background-color: white; 
+    width: 260px; 
+    height: 100%; 
+    text-align: justify; 
+    padding-left: 20px; 
+} 
+ 
+.text1{ 
+    color: #909394; 
+    font-size: 13px; 
+} 
+ 
+.documento{ 
+    width: 235px; 
+    height: 20px; 
+    border-color: #cfd2d3; 
+} 
+ 
+.boton{ 
+    background-color: #cfd2d3; 
+    outline: none; 
+    border: none; 
+    color: #909394; 
+    width: 240px; 
+    height: 30px; 
+    justify-content: center; 
+    align-items: center; 
+} 
+ 
+.text2{ 
+    color: #005baa; 
+    text-align: center; 
+} 
+ 
+#button { 
+    background-color: #d4d1cb; /* Color predeterminado del botón */ 
+} 
+ 
+#button.blue { 
+    background-color: #005baa; /* Color azul cuando hay texto en el input */ 
+    color: white;
+}
